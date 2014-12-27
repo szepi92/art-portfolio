@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title> Re&#769;ka Szepesva&#769;ri </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="js/galleria/galleria-1.3.5.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Quicksand">
+	
+	<script>
+		Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js');
+		Galleria.configure({
+			idleMode: false,
+			autoplay: 4000,
+			imageCrop: true,
+			showImagenav: false,
+			showCounter: false,
+			thumbnails: false,
+			showInfo: true,
+			_toggleInfo: false,
+			transition: 'fade',
+			transitionSpeed: 2000, 
+			height: 600
+		});
+		Galleria.run('.galleria');
+		
+		Galleria.on('ready', function(e) {
+			var container = $(".galleria-container")[0];
+			var infoText = $(".galleria-info");
+			infoText.css({
+				left: "0px",
+				width: "960px",
+				top: ""+(container.offsetHeight-28)+"px"
+			});
+		});
+	</script>
+	
+	<style>
+		.galleria-stage {
+			position: absolute;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			overflow:hidden;
+		}
+	</style>
+	
+	<!-- add css and metadata later -->
+</head>
+
+<body>
+
+	<div id="box">
+		<div id="header">
+			<div id="pagetitle"> <a href="index.html"> R&eacute;ka Szepesv&aacute;ri </a> </div> 
+			<div id="menu">
+				<div class="menu_items"> 
+					<a href="paintings/paintings_2014.html">PAINTINGS</a>
+					<ul style="padding-left: 21px; padding-right: 21px;">
+						<li> <a href="paintings/paintings_2010.html"> 2010 </a> </li>
+						<li> <a href="paintings/paintings_2011.html"> 2011 </a> </li>
+						<li> <a href="paintings/paintings_2012.html"> 2012 </a> </li>
+						<li> <a href="paintings/paintings_2013.html"> 2013 </a> </li>
+						<li> <a href="paintings/paintings_2014.html"> 2014 </a> </li>
+					</ul>
+				</div>
+				<div class="menu_items"> 
+					<a href="drawings/drawings_2013.html">DRAWINGS</a> 
+					<ul style="padding-left: 21px; padding-right: 21px;">
+						<li> <a href="drawings/drawings_2009.html"> 2009 </a> </li>
+						<li> <a href="drawings/drawings_2010.html"> 2010 </a> </li>
+						<li> <a href="drawings/drawings_2011.html"> 2011 </a> </li>
+						<li> <a href="drawings/drawings_2012.html"> 2012 </a> </li>
+						<li> <a href="drawings/drawings_2013.html"> 2013 </a> </li>
+					</ul>
+				</div>
+				<div class="menu_items"> 
+					<a href="print/print_2014.html">PRINTMAKING</a> 
+					<ul style="padding-left: 31px; padding-right: 31px;">
+						<li> <a href="print/print_2013.html"> 2013 </a> </li>
+						<li> <a href="print/print_2014.html"> 2014 </a> </li>
+					</ul>
+				</div>
+				<div class="menu_items"> <a href="digitalart.html">DIGITAL ART</a> </div>
+				<div class="menu_items"> <a href="design.html">DESIGN</a> </div>
+				<div class="menu_items"> <a href="statement.html">STATEMENT</a> </div>
+				<div class="menu_items"> <a href="about.html">ABOUT</a> </div>
+			</div>
+		</div>
+		
+		<!--<img id="title_image" src="images/lace.jpg" alt="Preservation Series Image" />-->
+		
+		<div id="title_image" class="galleria">
+			<img src="images/slideshow/IMG_6250.jpg" data-title="<b><i>The Language of Dreams</b></i>">
+			<img src="images/slideshow/MTE1.jpg" data-title="<b><i>My Thoughts Exactly</b></i>">
+			<img src="images/slideshow/black and white city.jpg" data-title="<b><i>Black and White City</b></i>">
+			<img src="images/slideshow/lace1.jpg" data-title="<b><i>53 Hours</b></i>">
+			<img src="images/slideshow/jessica.jpg" data-title="<b><i>Portrait of Jessica</b></i>">
+		</div>
+		
+		<!--<div id="block1" class="block">
+			<p>
+				This site showcases a selection of Re&#769;ka Szepesva&#769;ri's work. Recently, she has begun to move away from painting and drawing and investigate digital media together with installations. 
+			</p>
+			<p>
+				Re&#769;ka's works focus on exploring identity, human relationships and perception, primarily through installations and digital works.
+			</p>
+			<p>
+				At the same time, Re&#769;ka also enjoys design and has worked as a freelance graphic artist for 2 years. Past projects include re-designing the image of <a href="http://www.yourassistant.ca/">Your Assistant Inc.</a>, contributing graphics to news articles for <a href="http://www.uwimprint.ca/">Imprint</a>, and designing the <a href="images/tvt.jpg">logo</a> for the 2011 Titans Volleyball Tournament.
+			</p>
+			<p>
+				Re&#769;ka is also passionate about teaching art. She runs art workshops at the Hungarian School in Kitchener and directs the education program at Loovre Art Gallery. 
+			</p>
+		</div>
+		
+		<div id="block2" class="block">
+			<div class="titled_list">
+				Education
+				<ul>
+					<li> BFA (Bachelor of Fine Arts), University of Waterloo (ongoing) </li>
+				</ul>
+			</div>
+			<div class="titled_list">
+				Awards
+				<ul>
+					<li> Maia Reinking Art Award (2011) </li>
+					<li> McDonald's Second Year Fine Arts Scholarship (2012) </li>
+					<li> University of Waterloo Faculty of Arts Upper-Year Scholarship (2012, 2013) </li>
+					<li> University of Waterloo Sculpture Award (2013) </li>
+				</ul>
+			</div>
+			<div class="titled_list">
+				Group Exhibitions
+				<ul>
+					<li> Edmonton City Hall Exhibition (2011) </li>
+					<li> "Natural Environment" Exhibition by Loovre Art Gallery (2013) </li>
+					<li> "Just Because" Exhibition by Loovre Art Gallery (2013) </li>
+				</ul>
+			</div>
+		</div>-->
+		
+		<div id="copyright">
+		 &copy; 2014 R&eacute;ka Szepesv&aacute;ri
+		</div>
+		
+	</div>
+
+</body>
+</html>
