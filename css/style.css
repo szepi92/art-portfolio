@@ -157,6 +157,18 @@ a {
 	float: right;
 }
 
+#interview-video{
+	display: inline-block;
+	float: left;
+	width: 49%;
+}
+
+#experiment-video {
+	display: inline-block;
+	float: right;
+	width: 49%;
+}
+
 
 
 
@@ -164,7 +176,7 @@ a {
 	width: 350px;
 	padding: 0px;
 	display: inline-block;
-	line-height: 25px;
+	line-height: 20px;
 	margin-top: 20px;
 }
 
@@ -174,16 +186,44 @@ a {
 	margin-top: 7px;
 }
 
+#statement-content {
+	display: block;
+	width: 100%;
+}
+
+#statement-img {
+	display: inline-block;
+	width: 100%;
+}
+
+#statement-img img {
+	width: 100%;
+}
+
+#statement {
+	width: 100%;
+	background-color: #f4f4f4;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	line-height: 20px;
+}
+
+#statement p{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #about_me {
 	float: right;
 	width: 595px;
 }
 
-#about_me2 {
-	margin-top: 20px;
-}
-
 h3 {
 	font-size: 13px;
 	color: #666666;
+}
+
+#education {
+	margin-left: 40px;
 }

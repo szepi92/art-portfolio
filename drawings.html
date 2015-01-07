@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title> Re&#769;ka Szepesva&#769;ri Drawings </title>
+	<title> Re&#769;ka Szepesva&#769;ri Paintings </title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 	<script src="js/galleria/galleria-1.3.5.min.js"></script>
@@ -14,52 +14,71 @@
 		Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js');
 		Galleria.configure({
 			idleMode: false,
-			showCounter: false
+			showCounter: false,
+			showInfo: true,
+			_toggleInfo: false,
 		});
 		Galleria.run('.galleria');
 	</script>
 		
+	<script src="js/captions.js"></script>
+	
 	<!-- add css and metadata later -->
 </head>
 
 <body>
 	<div id="box">
+	
 		<div id="header">
 			<div id="pagetitle"> <a href="index.html"> R&eacute;ka Szepesv&aacute;ri </a> </div> 
 			<div id="menu">
-				<span> <a href="paintings.html">PAINTINGS</a> </span>
-				<span> <a class="active_menu" href="drawings.html">DRAWINGS</a> </span>
-				<span> <a href="print.html">PRINTMAKING</a> </span>
-				<span> <a href="digitalart.html">DIGITAL ART</a> </span>
-				<span> <a href="design.html">DESIGN</a> </span>
-				<span> <a href="about.html">ABOUT</a> </span>
+				<div class="menu_items"> <a href="current.html">CURRENT WORK</a> </div>
+				<div class="menu_items"> <a href="paintings.html">PAINTINGS</a> </div>
+				<div class="menu_items"> <a class="active_menu" href="drawings.html">DRAWINGS</a> </div>
+				<div class="menu_items"> <a href="print.html">PRINTMAKING</a> </div>
+				<div class="menu_items"> <a href="digitalart.html">DIGITAL ART</a> </div>
+				<div class="menu_items"> <a href="statement.html">STATEMENT</a> </div>
+				<div class="menu_items"> <a href="about.html">ABOUT</a> </div>
 			</div>
 		</div>
 		
 		<div class="galleria">
-			<img src="images/drawings/Christ.jpg">
-			<img src="images/drawings/girl.jpg">
-			<img src="images/drawings/figures.jpg">
-			<img src="images/drawings/stillife.jpg">
-			<img src="images/drawings/jessica.jpg">
-			<img src="images/drawings/sitting.jpg">
-			<img src="images/drawings/4.jpg">
-			<img src="images/drawings/portrait.jpg">
-			<img src="images/drawings/conte.jpg">
-			<img src="images/drawings/contour.jpg">
-			<img src="images/drawings/nude.jpg">
-			<img src="images/drawings/pattern.jpg">
-			<img src="images/drawings/scream.jpg">
-			<img src="images/drawings/woman1.jpg">
-		<div>
+		
+			<img src="images/drawings/drawings_2013/jessica.jpg" data-title="<b><i>Portrait of Jessica</i></b>, 2013. Vine charcoal on paper">
+			<img src="images/drawings/drawings_2013/girl.jpg" data-title="<b><i>Figure Study</i></b>, 2013. India ink, oil pastel and conte paper">
+			<img src="images/drawings/drawings_2013/Christ Body.jpg" data-title="<b><i>Crucifixion of Christ</i></b>, 2013. Conte on paper">
+			<img src="images/drawings/drawings_2013/Christ Skeleton.jpg" data-title="<b><i>Crucifixion of Christ Skeleton</i></b>, 2013. Charcoal pencil on mylar">
+			<img src="images/drawings/drawings_2013/gesture.jpg" data-title="<b><i>Gesture Drawings</i></b>, 2013. Conte on newsprint">
+			<img src="images/drawings/drawings_2013/contour.jpg" data-title="<b><i>Blind Contour</i></b>, 2013. Charcoal pencil on paper">
+			<img src="images/drawings/drawings_2013/IMG_1669.jpg" data-title="<b><i>I Need to Go Shoe Shopping</i></b>, 2013. Pen on paper">
+			<img src="images/drawings/drawings_2013/IMG_6324.jpg" data-title="<b><i>Accordion Book</i></b>, 2013. Book-board, book-cloth, glue, stonehenge paper">
+			
+			<img src="images/drawings/drawings_2012/sitting.jpg" data-title="<b><i>Figure Study</i></b>, 2012. Vine Charcoal on paper">
+			<img src="images/drawings/drawings_2012/IMG_6326.jpg" data-title="<b><i>Portrait Study (unfinished)</i></b>, 2012. Graphite on paper">
+			<img src="images/drawings/drawings_2012/woman1.jpg" data-title="<b><i>Expressive Figure No. 1</i></b>, 2012. Mixed media on paper">
+			<img src="images/drawings/drawings_2012/nude.jpg" data-title="<b><i>Life-size Figure Study</i></b>, 2012. Charcoal on paper">
+			
+			<img src="images/drawings/drawings_2011/conte.jpg" data-title="<b><i>Still-life No. 1</i></b>, 2011. Conte on paper">
+			<img src="images/drawings/drawings_2011/stillife.jpg" data-title="<b><i>Still-life No. 2</i></b>, 2011. Vine charcoal on paper">
+			<img src="images/drawings/drawings_2011/garbage.jpg" data-title="<b><i>Contrast Exercise</i></b>, 2011. India ink on paper">
+			<img src="images/drawings/drawings_2011/sportrait.jpg" data-title="<b><i>Tactile Blind Self-portrait</i></b>, 2011. Graphite & charcoal on paper">
+			<img src="images/drawings/drawings_2011/deon.jpg" data-title="<b><i>Tactile Blind Portrait of Deon</i></b>, 2011. Graphite & charcoal on paper">
+			<img src="images/drawings/drawings_2011/pattern.jpg" data-title="<b><i>Geometric Pattern</i></b>, 2011. Pen on paper">
+			
+			<img src="images/drawings/drawings_2010/scream.JPG" data-title="<b><i>Scream</i></b>, 2010. Ballpoint pen on paper">
+			<img src="images/drawings/drawings_2010/8.jpg" data-title="<b><i>Sketchbook Drawing</i></b>, 2010. Pen on paper">
+			
+			<img src="images/drawings/drawings_2009/portrait.jpg" data-title="<b><i>Portrait Study</i></b>, 2009. Graphite on paper">
+			<img src="images/drawings/drawings_2009/strucc.jpg" data-title="<b><i>Strucc</i></b>, 2009. Pen on paper">
+			<img src="images/drawings/drawings_2009/eye.jpg" data-title="<b><i>Study of an Eye</i></b>, 2009. Graphite on paper">
+			
+		</div>
 		
 		<div id="copyright">
 		 &copy; 2014 R&eacute;ka Szepesv&aacute;ri
 		</div>
 		
 	</div>
-		
+	
 </body>	
 </html>
-		
-		
